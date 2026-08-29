@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>bONEZ bIZARRE</title>
+<meta name="description" content="bONEZ bIZARRE - art, painting, photography and installations." />
+<link rel="canonical" href="https://bonezbizarre.com/" />
+<link rel="icon" type="image/svg+xml" href="/assets/img/bonez-bizarre-favicon.svg" />
+<link rel="apple-touch-icon" href="/assets/img/bonez-bizarre-logo.jpg" />
+<link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<div class="site">
+<header class="site-header">
+  <div class="site-contact"><a href="mailto:hello@bonezbizarre.com">hello@bonezbizarre.com</a></div>
+  <div class="site-title"><a href="/">bONEZ bIZARRE</a></div>
+  <nav class="site-nav" aria-label="Navigation"><ul><li><a href="/about/">About</a></li><li><a href="/installations/">Installations</a></li><li><a href="/portfolio/">Portfolio</a></li></ul></nav>
+</header>
+<main>
+<div class="cover">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="cover-wave" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" numOctaves="1" seed="7" result="noise">
+        <animate attributeName="baseFrequency" dur="39s" values="0.0035 0.005;0.006 0.003;0.0025 0.0055;0.0035 0.005" repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="80" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+  <img src="/assets/img/come-and-take-a-closer-look-3000x2118.jpg" alt="" class="cover-img" />
+</div>
+</main>
+<footer class="site-footer"></footer>
+</div>
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+  <button class="lightbox-next" aria-label="Next">&#8250;</button>
+</div>
+<script src="/assets/lightbox.js"></script>
+</body>
+</html>
